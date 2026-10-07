@@ -1,0 +1,8 @@
+{
+  "name": "Par Perfeito LIDL - jogo de lógica e ligações. ",
+  "description": "Mini-jogo de ligações lógicas criado pelo Estúdio P do PÚBLICO para o Natal LIDL com as gamas Deluxe, Favorina, brinquedos de madeira e o Quebra-Nozes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "entities": {
+    "metrics_events": {
+      "title": "Metrics Events",
+      "description": "Game performance and interaction events logged by players",
+      "type": "object",
+      "properties": {
+        "event": { "type": "string" },
+        "timestamp": { "type": "string" },
+        "clientSessionId": { "type": "string" },
+        "userId": { "type": "string" },
+        "userEmail": { "type": "string" },
+        "data": { "type": "object" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["event", "timestamp"]
+    },
+    "leaderboard": {
+      "title": "Official Leaderboard",
+      "description": "Top player scores, dwell times, and RGPD consent status",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "score": { "type": "number" },
+        "dwellTime": { "type": "number" },
+        "date": { "type": "string" },
+        "userId": { "type": "string" },
+        "userEmail": { "type": "string" },
+        "rgpdConsentMarketing": { "type": "boolean" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["name", "score", "dwellTime"]
+    },
+    "users": {
+      "title": "User Profiles",
+      "description": "Authenticated users with RGPD consent tracking",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string" },
+        "displayName": { "type": "string" },
+        "email": { "type": "string" },
+        "photoURL": { "type": "string" },
+        "rgpdConsentEstudioP": { "type": "boolean" },
+        "rgpdConsentMarketing": { "type": "boolean" },
+        "consentTimestamp": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["uid"]
+    }
+  }
+}
